@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.jumbotron {
+  margin:0 1vw auto
+}
+
+body {
+padding: 25px;
+background-repeat: no-repeat !important;
+background-size: cover !important;
+background:url('https://i.pinimg.com/originals/14/22/07/142207cfb41addee27b138fa7b7638d0.jpg')
+}
