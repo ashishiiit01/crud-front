@@ -61,7 +61,6 @@ class User extends React.Component {
                 console.log(this.state.user)
                 return
             } else {
-                alert("email not exits")
 
                 let user = await axios.put(`https://crud-back.herokuapp.com/user/${this.state.editUser._id}`, data)
                 if (user.data._id) {
@@ -106,7 +105,7 @@ class User extends React.Component {
             list = <p>No data found</p>
         }
         var deleteUser = async (user) => {
-            let res = await axios.delete(`https://crud-back.herokuapp.com/user${user._id}`)
+            let res = await axios.delete(`https://crud-back.herokuapp.com/user/${user._id}`)
             if (res.status == 200) {
                 let index = this.state.user.indexOf(user)
                 let res1 = this.state.user.splice(index, 1)
@@ -236,7 +235,7 @@ class User extends React.Component {
               />
               <br />
               <br />
-              <button class="btn btn-success" type='submit'>Submit</button>
+              <button className="btn btn-success" type='submit'>Submit</button>
             </form>
             <span id="editModal" style={{ "display": "none" }} data-toggle="modal" data-target="#exampleModal"></span>
           </Col>
